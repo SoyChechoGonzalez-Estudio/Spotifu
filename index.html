@@ -2,67 +2,113 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://i.icomoon.io/public/temp/8c34126bbe/IconosPersonalizados/style.css"
+    />
     <title>Spotifu</title>
   </head>
-
-  <body>
-    <div class="wrapper">
-      Flex order
-      <div class="flexOrder">
-        <img src="./assets/img/grand-escape.jpeg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque
-          consequuntur aliquam magni numquam dignissimos ex impedit praesentium
-          possimus eum voluptates placeat, voluptatum cupiditate veniam tempora
-          sed rerum tempore velit.
-        </p>
-      </div>
-      <div class="flexOrder">
-        <img src="./assets/img/grand-escape.jpeg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque
-          consequuntur aliquam magni numquam dignissimos ex impedit praesentium
-          possimus eum voluptates placeat, voluptatum cupiditate veniam tempora
-          sed rerum tempore velit.
-        </p>
-      </div>
-      <div class="flexOrder">
-        <img src="./assets/img/grand-escape.jpeg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque
-          consequuntur aliquam magni numquam dignissimos ex impedit praesentium
-          possimus eum voluptates placeat, voluptatum cupiditate veniam tempora
-          sed rerum tempore velit.
-        </p>
-      </div>
-      <div class="flexOrder">
-        <img src="./assets/img/grand-escape.jpeg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cumque
-          consequuntur aliquam magni numquam dignissimos ex impedit praesentium
-          possimus eum voluptates placeat, voluptatum cupiditate veniam tempora
-          sed rerum tempore velit.
-        </p>
-      </div>
+  <body class="body">
+    <div class="sidebar">
+      <header class="logo">
+        <a href="/" aria-current="page">
+          <img
+            src="./assets/logo/spotifu-logo.png"
+            class="logo-image"
+            width="112"
+            height="32"
+            alt="Logo de Spotifu"
+          />
+        </a>
+      </header>
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu-list">
+          <li class="menuItem is-active">
+            <a href="/" class="link" aria-current="page">
+              <i class="icon-home" aria-hidden="true"></i>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="/" class="link">
+              <i class="icon-search" aria-hidden="true"></i>
+              <span>Buscar</span>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="/" class="link">
+              <i class="icon-credit-card" aria-hidden="true"></i>
+              <span>Premium</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="list" aria-labelledby="library-nav">
+        <h2 class="list-title" id="library-nav">Tu biblioteca</h2>
+        <ul class="list-content">
+          <li class="list-item">
+            <a href="#" class="link">Creada para ti</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Escuchado recientemente</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Tus Me Gusta</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="list" aria-labelledby="playlist-nav">
+        <h2 class="list-title" id="playlist-nav">Playlist</h2>
+        <ul class="list-content">
+          <li class="list-item">
+            <a href="#" class="link">Lo mejor de los mejor</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Naruto al 100% para progr…</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Para cantar en la ducha</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Sin parar</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Naruto openings</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Boku no pico</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">This is Pokémon</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Más populares de la semana</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link">Mis pistas de shazam</a>
+          </li>
+          <li class="list-item"><a href="#" class="link">Audio Library</a></li>
+        </ul>
+      </nav>
     </div>
-    <main class="wrapper">
-      <h2>Default Flex</h2>
-      <div class="displayFlex">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
-    </main>
+
+    <div>
+      <button
+        class="buttonIcon is-white"
+        aria-label="Reproducir"
+        title="Reproducir"
+      >
+        <i class="icon-play" aria-hidden="true"></i>
+      </button>
+      <button
+        class="buttonIcon is-primary"
+        aria-label="Reproducir"
+        title="Reproducir"
+      >
+        <i class="icon-play" aria-hidden="true"></i>
+      </button>
+    </div>
   </body>
 </html>

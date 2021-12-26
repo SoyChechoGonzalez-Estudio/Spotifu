@@ -1,30 +1,26 @@
-@import './display/display-flex.css';
-@import './display/flex-order.css';
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-:root{
-  --darkColor: #04001e;
-  --lightColor: #dffbff;
-  --primaryColor: #db086f;
-}
-body{
-  background-color: var(--darkColor);
-  color: var(--lightColor);
-  font-family: system-ui;
-}
-a{
-  color: var(--lightColor);
-}
+/* Components */
+@import "./body.css";
+@import "./link.css";
+@import "./button-icon.css";
+@import "./sidebar.css";
 
-.wrapper{
-  max-inline-size: 64rem;
-  margin: auto;
-}
-.box{
-  border: 5px solid var(--primaryColor);
-  padding: 1rem;
-  counter-increment: flex-items;
-
-}
-.box::after{
-  content: counter(flex-items);
+:root {
+  --primaryColor: #00b050;
+  --white: #fff;
+  --gray10: #b3b3b3;
+  --gray20: #737373;
+  --gray30: #282828;
+  --gray40: #181818;
+  --gray50: #121212;
+  --gray60: #000000;
+  --primaryFont: "Roboto", Helvetica, sans-serif;
+  --headline1: bold 2rem / normal var(--primaryFont);
+  --headline2: bold 1.5rem / 1.75rem var(--primaryFont);
+  --baseFont: normal 0.875rem / 1.375rem var(--primaryFont);
+  --baseFontBold: bold 0.875rem / 1.375rem var(--primaryFont);
+  --button: bold 0.875rem / 1rem var(--primaryFont);
+  --small: normal 0.75em / normal var(--primaryFont);
 }
